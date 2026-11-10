@@ -15,7 +15,7 @@ import "../styles/layout.css";
   const recentClients = clients.slice(start, end);
   
   const activeClients = clients.filter(
-    client => client.status === "Active"
+    client => (client.status || "Active") === "Active"
   ).length;
 
   const pendingClients = clients.filter(
