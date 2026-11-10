@@ -1,0 +1,113 @@
+.client-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ 
+.client-section {
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 50px;
+}
+ 
+.client-section-title {
+  color: #544AC4;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+ 
+.client-field-label {
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 2px;
+}
+ 
+.client-field-value {
+  font-size: 14px;
+  color: #171717;
+  font-weight: 500;
+}
+
+.client-details-card {
+  min-height: calc(100vh - 3rem);
+}
+
+/* Edit Client form */
+.edit-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  max-width: 700px;
+}
+ 
+.edit-field {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.edit-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #171717;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+ 
+.edit-input {
+  height: 44px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #171717;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+ 
+.edit-input:focus {
+  border-color: #544AC4;
+}
+ 
+.btn-danger {
+  background-color: #EF4444;
+  border: none;
+}
+ 
+.btn-danger:hover {
+  background-color: #B91C1C;
+}
+
+.client-initials-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #a9a8bb;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+ 
+/*mobile*/
+@media(max-width: 768px) {
+  .client-section {
+   padding: 20px;
+  }
+
+  .client-details-card .d-flex > div {
+  min-width: 0;
+}
+
+.client-details-card p {
+  overflow-wrap: anywhere;
+}
+  
+}

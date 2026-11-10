@@ -1,0 +1,70 @@
+/* Profile avatar */
+.client-avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Full profile card */
+.client-details-card {
+  min-height: calc(100vh - 3rem);
+}
+
+/* Profile fields - 2 columns */
+.edit-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  max-width: 700px;
+}
+
+/* Each label + input */
+.edit-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #171717;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.edit-input {
+  height: 44px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #171717;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.edit-input:focus {
+  border-color: #544AC4;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .edit-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .client-details-card {
+  padding: 20px !important;
+}
+.client-details-card p {
+  overflow-wrap: anywhere;
+}
+}
